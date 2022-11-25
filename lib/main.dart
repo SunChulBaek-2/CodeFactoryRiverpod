@@ -1,3 +1,4 @@
+import 'package:codefactory_riverpod/screen/family_modifier_screen.dart';
 import 'package:codefactory_riverpod/screen/future_provider_screen.dart';
 import 'package:codefactory_riverpod/screen/home_screen.dart';
 import 'package:codefactory_riverpod/screen/state_notifier_provider.dart';
@@ -21,6 +22,8 @@ void main() {
                 return FutureProviderScreen();
               } else if (settings.name == StreamProviderScreen.routeName) {
                 return StreamProviderScreen();
+              } else if (settings.name == FamilyModifierScreen.routeName) {
+                return FamilyModifierScreen();
               }
               throw Exception();
             },
