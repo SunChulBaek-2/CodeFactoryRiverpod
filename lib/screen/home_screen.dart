@@ -1,4 +1,5 @@
 import 'package:codefactory_riverpod/layout/default_layout.dart';
+import 'package:codefactory_riverpod/screen/state_notifier_provider.dart';
 import 'package:codefactory_riverpod/screen/state_provider_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,13 @@ class HomeScreen extends StatelessWidget {
               Navigator.of(context).pushNamed(StateProviderScreen.routeName);
             },
             child: Text('StateProviderScreen')
-          )
+          ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed(StateNotifierProviderScreen.routeName);
+              },
+              child: Text('StateNotifierProviderScreen')
+          ),
         ],
       )
     );
