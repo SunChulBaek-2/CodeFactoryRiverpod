@@ -2,6 +2,7 @@ import 'package:codefactory_riverpod/screen/future_provider_screen.dart';
 import 'package:codefactory_riverpod/screen/home_screen.dart';
 import 'package:codefactory_riverpod/screen/state_notifier_provider.dart';
 import 'package:codefactory_riverpod/screen/state_provider_screen.dart';
+import 'package:codefactory_riverpod/screen/stream_provider_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -18,6 +19,8 @@ void main() {
                 return StateNotifierProviderScreen();
               } else if (settings.name == FutureProviderScreen.routeName) {
                 return FutureProviderScreen();
+              } else if (settings.name == StreamProviderScreen.routeName) {
+                return StreamProviderScreen();
               }
               throw Exception();
             },
