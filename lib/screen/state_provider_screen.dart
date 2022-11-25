@@ -1,5 +1,5 @@
 import 'package:codefactory_riverpod/layout/default_layout.dart';
-import 'package:codefactory_riverpod/riverpod/state_provider_screen.dart';
+import 'package:codefactory_riverpod/riverpod/state_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
