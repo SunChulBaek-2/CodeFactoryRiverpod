@@ -3,6 +3,7 @@ import 'package:codefactory_riverpod/screen/family_modifier_screen.dart';
 import 'package:codefactory_riverpod/screen/future_provider_screen.dart';
 import 'package:codefactory_riverpod/screen/home_screen.dart';
 import 'package:codefactory_riverpod/screen/listen_provider_screen.dart';
+import 'package:codefactory_riverpod/screen/select_provider_screen.dart';
 import 'package:codefactory_riverpod/screen/state_notifier_provider.dart';
 import 'package:codefactory_riverpod/screen/state_provider_screen.dart';
 import 'package:codefactory_riverpod/screen/stream_provider_screen.dart';
@@ -30,6 +31,8 @@ void main() {
                 return AutoDisposeModifierScreen();
               } else if (settings.name == ListenProviderScreen.routeName) {
                 return ListenProviderScreen();
+              } else if (settings.name == SelectProviderScreen.routeName) {
+                return SelectProviderScreen();
               }
               throw Exception();
             },
