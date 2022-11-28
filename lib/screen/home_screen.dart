@@ -3,6 +3,7 @@ import 'package:codefactory_riverpod/screen/auto_dispose_modifier_screen.dart';
 import 'package:codefactory_riverpod/screen/family_modifier_screen.dart';
 import 'package:codefactory_riverpod/screen/future_provider_screen.dart';
 import 'package:codefactory_riverpod/screen/listen_provider_screen.dart';
+import 'package:codefactory_riverpod/screen/provider_screen.dart';
 import 'package:codefactory_riverpod/screen/select_provider_screen.dart';
 import 'package:codefactory_riverpod/screen/state_notifier_provider.dart';
 import 'package:codefactory_riverpod/screen/state_provider_screen.dart';
@@ -65,6 +66,12 @@ class HomeScreen extends StatelessWidget {
                 Navigator.of(context).pushNamed(SelectProviderScreen.routeName);
               },
               child: Text('SelectProviderScreen')
+          ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed(ProviderScreen.routeName);
+              },
+              child: Text('ProviderScreen')
           ),
         ],
       )
