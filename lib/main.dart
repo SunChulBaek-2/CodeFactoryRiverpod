@@ -1,3 +1,4 @@
+import 'package:codefactory_riverpod/screen/auto_dispose_modifier_screen.dart';
 import 'package:codefactory_riverpod/screen/family_modifier_screen.dart';
 import 'package:codefactory_riverpod/screen/future_provider_screen.dart';
 import 'package:codefactory_riverpod/screen/home_screen.dart';
@@ -24,6 +25,8 @@ void main() {
                 return StreamProviderScreen();
               } else if (settings.name == FamilyModifierScreen.routeName) {
                 return FamilyModifierScreen();
+              } else if (settings.name == AutoDisposeModifierScreen.routeName) {
+                return AutoDisposeModifierScreen();
               }
               throw Exception();
             },

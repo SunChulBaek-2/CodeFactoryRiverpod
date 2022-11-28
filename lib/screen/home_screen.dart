@@ -1,4 +1,5 @@
 import 'package:codefactory_riverpod/layout/default_layout.dart';
+import 'package:codefactory_riverpod/screen/auto_dispose_modifier_screen.dart';
 import 'package:codefactory_riverpod/screen/family_modifier_screen.dart';
 import 'package:codefactory_riverpod/screen/future_provider_screen.dart';
 import 'package:codefactory_riverpod/screen/state_notifier_provider.dart';
@@ -44,6 +45,12 @@ class HomeScreen extends StatelessWidget {
                 Navigator.of(context).pushNamed(FamilyModifierScreen.routeName);
               },
               child: Text('FamilyModifierScreen')
+          ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed(AutoDisposeModifierScreen.routeName);
+              },
+              child: Text('AutoDisposeModifierScreen')
           ),
         ],
       )
