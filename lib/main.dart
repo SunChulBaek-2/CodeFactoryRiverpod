@@ -1,3 +1,4 @@
+import 'package:codefactory_riverpod/riverpod/provider_observer.dart';
 import 'package:codefactory_riverpod/screen/auto_dispose_modifier_screen.dart';
 import 'package:codefactory_riverpod/screen/family_modifier_screen.dart';
 import 'package:codefactory_riverpod/screen/future_provider_screen.dart';
@@ -14,6 +15,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 void main() {
   runApp(
     ProviderScope(
+      observers: [
+        Logger()
+      ],
       child: MaterialApp(
         home: HomeScreen(),
         onGenerateRoute: (settings) => PageRouteBuilder(
